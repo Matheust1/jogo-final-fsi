@@ -1,9 +1,16 @@
 [gd_scene format=3 uid="uid://drtkhfetijwhe"]
 
+[ext_resource type="Script" uid="uid://f7kf6ryip1ya" path="res://scripts/teste.gd" id="1_4dvvg"]
 [ext_resource type="Texture2D" uid="uid://bkhc43mtvmisu" path="res://icon.svg" id="1_6e84v"]
 
 [node name="Node2D" type="Node2D" unique_id=435840476]
+script = ExtResource("1_4dvvg")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1998212624]
+position = Vector2(60, 56)
 texture = ExtResource("1_6e84v")
 offset = Vector2(70, 70)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D" unique_id=131251826]
+position = Vector2(300, 70)
+texture = ExtResource("1_6e84v")
