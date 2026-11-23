@@ -1,7 +1,7 @@
 extends Node2D
 
 var i = 1
-var vel = 200
+var vel = 900
 var direction = 1
 
 # Called when the node enters the scene tree for the first time.
@@ -16,7 +16,7 @@ func _process(delta: float) -> void:
 	
 	position.x += (vel * delta * direction)
 	
-	if (position.x >= 400):
+	if (position.x >= 500):
 		direction = -1
 	
 	elif (position.x <= 0):
